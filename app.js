@@ -371,41 +371,69 @@ console.log(numbers)
 // 013 - Object Literals
 // #####################
 
-const person ={
-  firstName : 'Steve',
-  lastName: 'Smith',
-  age: 30,
-  email: 'steve@aol.com',
-  hobbies: ['music', 'sports'],
-  address:{
-    city:'Miami',
-    state: 'FL'
-  },
-  getBirthYear: function(){
-    return 2017 - this.age
-  }
-}
+// const person ={
+//   firstName : 'Steve',
+//   lastName: 'Smith',
+//   age: 30,
+//   email: 'steve@aol.com',
+//   hobbies: ['music', 'sports'],
+//   address:{
+//     city:'Miami',
+//     state: 'FL'
+//   },
+//   getBirthYear: function(){
+//     return 2017 - this.age
+//   }
+// }
 
-let val = person
-// get specific value
-val = person.firstName
-val = person['lastName']
-val = person.age
-val = person.hobbies[1]
-val = person.address.state
-val = person.address['state']
-val = person.getBirthYear()
+// let val = person
+// // get specific value
+// val = person.firstName
+// val = person['lastName']
+// val = person.age
+// val = person.hobbies[1]
+// val = person.address.state
+// val = person.address['state']
+// val = person.getBirthYear()
 
+
+// console.log(val)
+
+// const people = [
+//   {name: 'John', age: 30},
+//   {name: 'Tom', age: 21},
+//   {name: 'Nancy', age: 26},
+//   {name: 'Clara', age: 23}
+// ]
+
+// for(let i=0; i < people.length; i++){
+//   console.log(people[i].name + ' is ' + people[i].age + ' years old');
+// }
+
+// ###################
+// 014 - Dates & Times
+// ###################
+
+let val 
+
+const today = new Date()
+let birthday = new Date('1981-10-10 11:25:00')
+birthday = new Date('September 10 1981')
+birthday = new Date('9/10/1981')
+
+// get dateinformations
+val = today.getMonth() //+1 rechnen!!!
+val = today.getDate()
+val = today.getDay()
+val = today.getFullYear()
+val = today.getSeconds()
+val = today.getMilliseconds()
+val = today.getTime()
+
+// set dateinformations
+birthday.setMonth(2)
+birthday.setDate(12)
+birthday.setYear(2012)
 
 console.log(val)
-
-const people = [
-  {name: 'John', age: 30},
-  {name: 'Tom', age: 21},
-  {name: 'Nancy', age: 26},
-  {name: 'Clara', age: 23}
-]
-
-for(let i=0; i < people.length; i++){
-  console.log(people[i].name + ' is ' + people[i].age + ' years old');
-}
+console.log(birthday)
