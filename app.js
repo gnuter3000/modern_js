@@ -266,6 +266,10 @@ console.log(numbers)
 // const age = 30
 // const job = 'Web Developer'
 // const city = 'Miami'
+// const name = 'John'
+// const age = 30
+// const job = 'Web Developer'
+// const city = 'Miami'
 
 // without template strings (es5)
 // html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: ' + job + '</li><li>City: ' + city + '</li></ul>'
@@ -287,3 +291,78 @@ console.log(numbers)
 // </ul>`
 
 // document.body.innerHTML = html
+
+// // ############################
+// // 012 - Arrays & Array Methods
+// // ############################
+
+// // create some arrays
+// const numbers1 = [34,23,38,332,3876]
+// const numbers2 = new Array(22,234,2,553,41)
+// const fruit = ['apple', 'orange', 'pear']
+// const mixed = [22, 'hello', true, undefined, null, {2:1, b:1}, new Date]
+
+// let val
+
+// // get array length
+// val = numbers1.length
+
+// // check if is array
+// val = Array.isArray(numbers1)
+
+// // get a single value
+// val = numbers1[0]
+
+// // insert something into an array
+// numbers1[2]=100 
+
+// //find index of value
+// val = numbers1.indexOf(100)
+
+// // mutating arrays
+// // addon to array
+// numbers1.push(250)
+
+// // add on to front
+// numbers1.unshift(21)
+
+// // take off from back
+// numbers1.pop()
+
+// // take off from front
+// numbers1.shift()
+
+// // splice values
+// // numbers1.splice(1,3)
+
+// // array reverse
+// numbers1.reverse()
+
+// // concat arrays
+// val = numbers1.concat(numbers2)
+
+// // sort 
+// val = fruit.sort()
+
+// val =numbers1.sort()
+// val =numbers1.sort()
+
+// // use the compare function
+// val = numbers1.sort(function(x,y){
+//   return x-y
+// })
+
+// // reverse sort
+// val = numbers1.sort(function(x,y){
+//   return y-x
+// })
+
+// // find -- only the first item in array!
+// function under50(num){
+//   return num<50
+// }
+
+// val = numbers1.find(under50)
+
+// console.log(val)
+// console.log(numbers1)
