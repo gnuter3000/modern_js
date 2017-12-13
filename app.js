@@ -110,10 +110,180 @@ console.log(numbers)
 //   city: 'boston',
 //   state: 'MA'
 // }
-console.log(typeof address)
+// console.log(typeof address)
 // functions
 // dates
 // const today= new Date()
 // console.log(typeof today)
 // anything else
 
+// ######################
+// 008 - Type Conversion
+// ######################
+
+// // number to string
+// val = String(555)
+// val = String(4+4)
+
+// //boolean to string
+// val = String(true)
+
+// //date to string
+// val = String(new Date)
+
+// //array to string
+
+// val = String([1,2,3,4])
+
+// //toString
+// val = (5).toString()
+// val = (true).toString()
+
+// //strings to numbers
+// val = Number('5')
+// val = Number(true)
+// val = Number(false)
+// val = Number(null)
+// val = Number('hello') //NaN = not a number
+// val = Number([1,2,3,4,5]) //NaN = not a number
+// val = parseInt('100.30') //Ergebnis: 100!
+// val = parseFloat('100.3') //Ergebnis: 100.30!
+
+// // 
+
+// console.log(val)
+// console.log(typeof val)
+// // console.log(val.length)
+// console.log(val.toFixed(2))
+
+
+// const val1 = '5'
+// const val2 = String(6)
+// const sum = val1 + val2
+// console.log(sum)
+// console.log(typeof sum)
+
+
+// ###############################
+// 009 - Numbers & The Math Object
+// ###############################
+// const num1=100
+// const num2=50
+// let val
+
+// simple math with numbers
+// val = num1 + num2
+// val = num1 * num2
+// val = num1 - num2
+// val = num1 / num2
+// val = num1 % num2
+
+// Math Object
+// val = Math.PI
+// val = Math.E
+// val = Math.round(val)
+// val = Math.ceil(val)
+// val = Math.floor(val)
+// val = Math.sqrt(val)
+// val = Math.abs(-3)
+// val = Math.pow(8 ,2)
+// val = Math.min(8 ,2, 11, -3)
+// val = Math.max(8 ,2, 11, -3)
+// val = Math.random()
+// val = Math.floor(Math.random() * 20 +1)
+
+// console.log(val)
+
+// ####################################
+// 010 - String Methods & Concatenation
+// ####################################
+
+// const firstName = 'William'
+// const lastName = 'Johnson'
+// const age = '36'
+// const str = "Hello my Name is Hannibal Smith"
+// const tags = 'web design, web development'
+// let val 
+
+// Concatenation
+// val = firstName + ' ' + lastName
+
+// Appending
+// val = 'Brad '
+// val = val + 'Traversy'
+// val = 'Hello my Name is ' + firstName + ' and I am ' + age;
+
+// Escaping
+// val = "That's awesome, I can't wait"
+// val = 'That\'s awesome, I can\'t wait'
+
+// Length
+// val = firstName.length
+
+// Concat
+// val = firstName.concat(' ', lastName)
+
+// ToUpperCase
+// val = firstName.toUpperCase()
+// val = firstName.toLowerCase()
+// val = firstName[2] //Ergebnis L (von William)
+
+// indexOf()
+// val = firstName.indexOf('l') //Ergebis 2 >> an welcher Stelle in firstName  steht ein l
+// val = firstName.lastIndexOf('l') //Ergebis 3 >> an welcher Stelle in firstName  steht ein l von hinten
+
+// charAt()
+// val = firstName.charAt('5') //Ergebnis 5
+
+// get last Charakter
+// val = firstName.charAt(firstName.length-1) //Ergebnis letzter Buchstabe
+
+// substrings
+// val = firstName.substring(0,4)
+
+// slice
+// val = firstName.slice(0,4) //similar to substring
+// val = firstName.slice(-3) 
+
+// split
+// val = str.split(' ')
+// val = tags.split(',')
+
+// replace
+// val = str.replace('Hannibal', 'Jack')
+
+// includes()
+// val = str.includes('Hello') //Ergbnis: true weil Hello in str enthalten ist
+// val = str.includes('foo') //Ergbnis: false weil foo nicht in str enthalten ist
+
+// console.log(val)
+
+//######################## 
+// 011 - Template Literals
+//######################## 
+
+// const name = 'John'
+// const age = 30
+// const job = 'Web Developer'
+// const city = 'Miami'
+
+// without template strings (es5)
+// html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: ' + job + '</li><li>City: ' + city + '</li></ul>'
+
+// with template strings
+// function hello(){
+//   return 'hello'
+// }
+// html =  `
+// <ul>
+//   <li>Name: ${name}</li>
+//   <li>Age: ${age}</li>
+//   <li>Job: ${job}</li>
+//   <li>City: ${city}</li>
+//   <li>${2+2}</li>
+//   <li>${hello()}</li>
+//   <li>${age > 30}</li>
+//   <li>${age > 30 ? 'Over 30' : 'Under 30'}</li>
+// </ul>`
+
+// document.body.innerHTML = html
