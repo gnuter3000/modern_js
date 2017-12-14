@@ -635,3 +635,73 @@ console.log(numbers)
 // todo.add()
 // todo.edit('something')
 // todo.delete('something 2')
+
+// ###################
+// 018 - General Loops
+// ###################
+
+// // for Loops
+// for (var i = 0; i < 10; i++) {
+//
+//   if (i===2) {
+//     console.log(' 2 is my fav num');
+//     continue //got to the nexet iteration
+//   }
+//
+//   if (i===5) {
+//     break //brake out of the loop, stop the loop
+//   }
+//   console.log(i);
+// }
+
+// // while loop
+// i=1
+// while (i < 10) {
+//   console.log(`Number: ${i}`);
+//   i++
+// }
+
+// // do while
+// let i=1
+// do {
+//   console.log(`Number: ${i}`);
+//   i++
+// } while (i < 10);
+
+// //arrays and loops
+// const cars =['Ford', 'Chevy', 'Honda', 'Toyota']
+// for (var i = 0; i < cars.length; i++) {
+//   console.log(cars[i]);
+// }
+//
+// // foraech
+// cars.forEach(function(car){
+//   console.log(car);
+// })
+
+// // mapping
+// const users =[
+//   {id:1, name: 'john'},
+//   {id:2, name: 'sara'},
+//   {id:3, name: 'clara'},
+//   {id:4, name: 'charlie'},
+//   {id:5, name: 'steve'}
+// ]
+//
+// const ids = users.map(function(user){
+//   return user.id
+// })
+//
+// console.log(ids);
+
+// // for in loop
+// const user = {
+//   firstName: 'John',
+//   lastName: 'Doe',
+//   age: '30'
+// }
+//
+// for (var i in user) {
+//     console.log(`${i} : ${user[i]}`);
+//
+// }
