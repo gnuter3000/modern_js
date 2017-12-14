@@ -442,7 +442,7 @@ console.log(numbers)
 // 015 - If Statements & Comparison Operators
 // ##########################################
 
-const id = 100
+// const id = 100
 
 // test just the value
 // if(id == 100){
@@ -496,7 +496,7 @@ const id = 100
 //   console.log('its not true');
 // }
 
-const color = 'yellow'
+// const color = 'yellow'
 // const color = 'green'
  //
  // if (color==='red') {
@@ -535,3 +535,49 @@ const color = 'yellow'
 //   console.log('Correct');
 // else
 //   console.log('incorrect');
+
+// ##############
+// 016 - Switches
+// ##############
+
+// // to validate conditions wfor when you have a lot of cases
+// const color = 'yellow'
+//
+// switch (color) {
+//   case 'red':
+//       console.log('color is red');
+//     break;
+//   case 'blue':
+//       console.log('color is blue');
+//     break;
+//   default:
+//       console.log('color is not red or blue');
+// }
+
+let day
+
+switch (new Date().getDay) {
+  case 0:
+    day = 'Sunday'
+    break;
+  case 1:
+    day = 'Monday'
+    break;
+  case 2:
+    day = 'Tuesday'
+    break;
+  case 3:
+    day = 'Wednsday'
+    break;
+  case 4:
+    day = 'Thursday'
+    break;
+  case 5:
+    day = 'Friday'
+    break;
+  case 6:
+    day = 'Saturday'
+    break;
+}
+
+console.log(day);
