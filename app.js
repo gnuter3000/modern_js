@@ -1,5 +1,5 @@
 // ######################
-/* // log to console 
+/* // log to console
 // ######################
 console.log('heloo world')
 console.log('123')
@@ -149,7 +149,7 @@ console.log(numbers)
 // val = parseInt('100.30') //Ergebnis: 100!
 // val = parseFloat('100.3') //Ergebnis: 100.30!
 
-// // 
+// //
 
 // console.log(val)
 // console.log(typeof val)
@@ -203,7 +203,7 @@ console.log(numbers)
 // const age = '36'
 // const str = "Hello my Name is Hannibal Smith"
 // const tags = 'web design, web development'
-// let val 
+// let val
 
 // Concatenation
 // val = firstName + ' ' + lastName
@@ -243,7 +243,7 @@ console.log(numbers)
 
 // slice
 // val = firstName.slice(0,4) //similar to substring
-// val = firstName.slice(-3) 
+// val = firstName.slice(-3)
 
 // split
 // val = str.split(' ')
@@ -258,9 +258,9 @@ console.log(numbers)
 
 // console.log(val)
 
-//######################## 
+//########################
 // 011 - Template Literals
-//######################## 
+//########################
 
 // const name = 'John'
 // const age = 30
@@ -314,7 +314,7 @@ console.log(numbers)
 // val = numbers1[0]
 
 // // insert something into an array
-// numbers1[2]=100 
+// numbers1[2]=100
 
 // //find index of value
 // val = numbers1.indexOf(100)
@@ -341,7 +341,7 @@ console.log(numbers)
 // // concat arrays
 // val = numbers1.concat(numbers2)
 
-// // sort 
+// // sort
 // val = fruit.sort()
 
 // val =numbers1.sort()
@@ -413,27 +413,225 @@ console.log(numbers)
 // ###################
 // 014 - Dates & Times
 // ###################
+//
+// let val
+//
+// const today = new Date()
+// let birthday = new Date('1981-10-10 11:25:00')
+// birthday = new Date('September 10 1981')
+// birthday = new Date('9/10/1981')
+//
+// // get dateinformations
+// val = today.getMonth() //+1 rechnen!!!
+// val = today.getDate()
+// val = today.getDay()
+// val = today.getFullYear()
+// val = today.getSeconds()
+// val = today.getMilliseconds()
+// val = today.getTime()
+//
+// // set dateinformations
+// birthday.setMonth(2)
+// birthday.setDate(12)
+// birthday.setYear(2012)
+//
+// console.log(val)
+// console.log(birthday)
 
-let val 
+// ##########################################
+// 015 - If Statements & Comparison Operators
+// ##########################################
 
-const today = new Date()
-let birthday = new Date('1981-10-10 11:25:00')
-birthday = new Date('September 10 1981')
-birthday = new Date('9/10/1981')
+// const id = 100
 
-// get dateinformations
-val = today.getMonth() //+1 rechnen!!!
-val = today.getDate()
-val = today.getDay()
-val = today.getFullYear()
-val = today.getSeconds()
-val = today.getMilliseconds()
-val = today.getTime()
+// test just the value
+// if(id == 100){
+//   console.log('its true');
+// }else{
+// console.log('its not true');
+// }
+//
+// if(id > 100){
+//   console.log('its true');
+// }else{
+//   console.log('its not true');
+// }
+//
+// if(id != 101){
+//   console.log('its true');
+// }else{
+//   console.log('its not true');
+// }
+//
+// if(id != 101){
+//   console.log('its true');
+// }else{
+//   console.log('its not true');
+// }
+//
+// // test value and the type with 3x=!!!
+// if(id === 100){
+//   console.log('its true');
+// }else{
+//   console.log('its not true');
+// }
+//
+// if(id !== 100){
+//   console.log('its true');
+// }else{
+//   console.log('its not true');
+// }
 
-// set dateinformations
-birthday.setMonth(2)
-birthday.setDate(12)
-birthday.setYear(2012)
+// //test if undefined
+// if (typeof id !== 'undefined') {
+//   console.log(`The ID is ${id}`);
+// } else {
+//   console.log('No ID');
+// }
+//
+// //greater or less then
+// if(id >= 100){
+//   console.log('its true');
+// }else{
+//   console.log('its not true');
+// }
 
-console.log(val)
-console.log(birthday)
+// const color = 'yellow'
+// const color = 'green'
+ //
+ // if (color==='red') {
+ //   console.log('color is red');
+ // }else if (color==='yellow') {
+ //   console.log('color is yellow');
+ // }else if (color==='blue') {
+ //   console.log('color is blue');
+ // }else {
+ //   console.log('color is not red yellow or blue');
+ // }
+
+// const name = 'steve'
+// const age = 25
+// //AND &&
+// if (age > 0 && age < 12) {
+//   console.log(`${name} is a child`);
+// }else if (age >=12 && age <20) {
+//   console.log(`${name} is a teenager`);
+// }else if (age >=20) {
+//   console.log(`${name} is and adult`);
+// }
+//
+// // OR ||
+// if (age<16 || age > 65) {
+//   console.log(`${name} can not run in race`);
+// }else {
+//   console.log(`${name} is registerd for the race`);
+// }
+//
+// // if statement in (...)
+// console.log(id===100 ? 'Correct' : 'Incorrect');
+//
+// // without curly braces
+// if (id===100)
+//   console.log('Correct');
+// else
+//   console.log('incorrect');
+
+// ##############
+// 016 - Switches
+// ##############
+
+// // to validate conditions wfor when you have a lot of cases
+// const color = 'yellow'
+//
+// switch (color) {
+//   case 'red':
+//       console.log('color is red');
+//     break;
+//   case 'blue':
+//       console.log('color is blue');
+//     break;
+//   default:
+//       console.log('color is not red or blue');
+// }
+
+// let day
+
+// switch (new Date().getDay()) {
+//   case 0:
+//     day = 'Sunday'
+//     break;
+//   case 1:
+//     day = 'Monday'
+//     break;
+//   case 2:
+//     day = 'Tuesday'
+//     break;
+//   case 3:
+//     day = 'Wednsday'
+//     break;
+//   case 4:
+//     day = 'Thursday'
+//     break;
+//   case 5:
+//     day = 'Friday'
+//     break;
+//   case 6:
+//     day = 'Saturday'
+//     break;
+// }
+
+// console.log(day);
+
+// #########################################
+// 017 - Function Declarations & Expressions
+// #########################################
+
+// // function declarations
+// function greet(firstName, lastName){
+// return(`Hello World ${firstName} ${lastName}`)
+// }
+
+// console.log(greet('John', 'Doe'))
+
+// // with default values for firstName and lastName
+// function greet(firstName = 'Robert', lastName='Smith'){
+// return(`Hello World ${firstName} ${lastName}`)
+// }
+
+// console.log(greet('John', 'Doe'))
+// console.log(greet())
+
+// // function expressions
+// const square = function(x=1){
+//  return x*x
+// };
+
+// console.log(square(1123))
+
+// Immediately-invoked function expression = IIFE
+// (function(){
+//   console.log('iife ran')
+// })()
+
+// (function(name){
+//   console.log(`Hello ${name}`)
+// })('Brad')
+
+// property methods
+// when a function is put inside an object, it is called a method
+// const todo = {
+//   add: function(){
+//     console.log('Add todo')
+//   },
+//   edit: function(id){
+//     console.log(`Edit todo ${id}`)
+//   }
+// }
+
+// todo.delete = function(id='nothing'){
+//   console.log(`deleted ${id}`)
+// }
+
+// todo.add()
+// todo.edit('something')
+// todo.delete('something 2')
