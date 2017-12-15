@@ -774,3 +774,43 @@ console.log(numbers)
 // val = window.navigator.language
 
 // console.log(val);
+
+// ###################################
+// 020 - Block Scope With let & const
+// ###################################
+
+// global scope
+// var a = 1
+// let b = 2
+// const c = 3
+
+// function test(){
+//   var a = 4
+//   let b = 5
+//   const c = 6
+// console.log('function scope', a,b,c);
+// }
+// test()
+//
+// if (true) {
+//   // block scope
+//   var a = 4
+//   let b = 5
+//   const c = 6
+// console.log('blockscope',a,b,c); //a changed!!!!
+// }
+
+
+// // scope with loops
+// for (let a = 0; a < 10; a++) {
+//   console.log(`let loop: ${a}`);
+// }
+// console.log('----------------');
+// console.log('global scope',a,b,c);
+// console.log('----------------');
+// for (var a = 0; a < 10; a++) {
+//   console.log(`var loop: ${a}`);
+// }
+// console.log('----------------');
+// console.log('global scope',a,b,c);
+// console.log('----------------');
