@@ -705,3 +705,72 @@ console.log(numbers)
 //     console.log(`${i} : ${user[i]}`);
 //
 // }
+
+// #################################
+// 019 - A Look At The Window Object
+// #################################
+// window methods object and properties
+
+// alert
+// window.alert('alarm')
+
+// prompt
+// const input = prompt()
+// alert(input)
+
+// // confirm
+// if (confirm('are you shure')) {
+//   console.log('yes');
+// }else {
+//   console.log('no');
+// }
+
+// let val
+// // outer hight and width
+// val=window.outerHeight
+// val=window.outerWidth
+
+// // inner hight and width
+// val=window.innerHeight
+// val=window.innerWidth
+
+// //scrollpoints
+// val = window.scrollY
+// val = window.scrollX
+
+// location Object
+// val = window.location //host:port/path
+// val = window.location.port
+// val = window.location.href
+// val = window.location.search
+
+// redirect
+// window.location.href='http://google.de'
+
+// reload
+// window.location.reload()
+
+// history object
+ // window.history.go(-20)
+ // val = window.history.length
+
+ // navigator object
+ // val = window.navigator
+// output:
+// Navigator
+// activeVRDisplays: Array []
+// appCodeName: "Mozilla"
+// appName: "Netscape"
+// appVersion: "5.0 (Windows)"
+// buildID: "20171206182557"
+// cookieEnabled: true
+// doNotTrack: "unspecified"
+
+// val = window.navigator.appName
+// val = window.navigator.appVersion
+// val = window.navigator.userAgent
+// val = window.navigator.platform
+// val = window.navigator.vendor
+// val = window.navigator.language
+
+// console.log(val);
