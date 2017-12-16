@@ -1,3 +1,12 @@
+
+// ###############################
+//  03 - DOM Manipulation & Events
+// ###############################
+
+// ###################################
+// 022 - Examining The Document Object
+// ###################################
+
 let val;
 
 val = document;
@@ -30,11 +39,11 @@ val = document.scripts;
 val = document.scripts[2].getAttribute('src');
 
 let scripts = document.scripts;
-
 let scriptsArr = Array.from(scripts);
 
 scriptsArr.forEach(function(script) {
   console.log(script.getAttribute('src'));
+  console.log(script);
 });
 
 console.log(val);
